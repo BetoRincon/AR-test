@@ -1,0 +1,28 @@
+<template name="arWithDataTemplate">
+    Acá va el mismo ar de siempre, pero con los datos de la sección de CMS {{this}}
+    {{> arTemplate}}
+</template>
+
+<template name="arTemplate">
+    <div>
+        <h1>Módulo de realidad aumentada</h1>
+        <p>
+            Acá va el módulo de realidad aumentada. Este módulo tiene dos
+            pantallas:
+        </p>
+        <ul>
+            <li>
+            	<a href="/ar/calibration">Calibración y ubicación en mapa</a>
+            </li>
+            <li>
+            	<a href="/ar/pointsOverMap">Puntos sobre imagen de video</a>
+            </li>
+        </ul>
+    </div>
+    <button
+        id="backButton"
+        class="btn btn-primary pull-right" onclick="history.back();">
+        {{> icon "backward"}}
+        Regresar
+    </button>
+</template>
