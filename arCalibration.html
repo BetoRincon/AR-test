@@ -1,0 +1,43 @@
+<template name="arCalibrationTemplate">
+    <style type="text/css">
+    	@media screen and (max-width: 767px) {
+		    h1{font-size:19px!important}
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+		    h1{font-size:26px!important}
+		}
+		@media (min-width: 992px) and (max-width: 1199px) {
+		    h1{font-size:30px!important}
+		}
+		@media screen and (min-width: 1200px) {
+		    h1{font-size:36px!important}
+		}
+    </style>
+    <div id="modigemArArea" style="height:100%">
+        <div id="arHeader">
+            <h1 class="text-primary">
+                Verifica / corrige tu ubicación
+            </h1>
+            <img
+                id="imglocation"
+                src="/ar/images/placeholder.png"
+                alt="Busca tu ubicación">
+        </div>
+        <section id="map" class="main"></section>
+        <div id="arFooter">
+            <img id="imgbackf" src="/ar/images/backf.png" alt="Regresar">
+            <img id="imgnext" src="/ar/images/next.png" alt="Siguiente">
+        </div>
+    </div>
+        {{> rotateScreen}}
+</template>
+
+<template name="rotateScreen">
+    <section class="rotateDeviceAr">
+        <img style="width:20%;" src="/themes/ui/img/login/loginLogo.svg">
+        <br>
+        <img style="width:20%;" src="/ar/images/rotatev.gif">
+        <br>
+        Gira tu smartphone
+    </section>
+</template>

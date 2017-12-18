@@ -1,0 +1,32 @@
+<template name="arPointsOverMapTemplate">
+    <style type="text/css">
+    	#arBody { 
+			height: 100%; 
+			margin: 0; 
+			padding: 0;
+			background-color:black!important;color:white!important
+		}
+		video {
+            position:absolute;object-fit: fill;
+		}
+    </style>
+    <div id="modigemArArea" style="height:100%">
+	    <div id="arBody">
+            <div id="locations"></div>
+            <div id="container">
+                <video
+                    autoplay
+                    width="320"
+                    height="240"
+                    poster="/ar/images/alphaspace.png">
+                </video>
+                <img id="imgState">
+                <img id="imgCompass" src="/ar/images/compass.png">
+                <img id="imgSwitch" src="/ar/images/switch-camera.png">
+                <img id="imgBack" src="/ar/images/back.png">
+                <div id="divMsg"></div>
+            </div>
+	    </div>
+	</div>
+        {{> rotateScreen}}
+</template>
