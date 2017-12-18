@@ -1,9 +1,19 @@
-<template name="arWithDataTemplate">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="arCalibration.js"></script>
+	<script type="text/javascript" src="arIndex.js"></script>
+	<script type="text/javascript" src="arPointsOverMap.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div name="arWithDatadiv">
     Acá va el mismo ar de siempre, pero con los datos de la sección de CMS {{this}}
-    {{> arTemplate}}
-</template>
+    {{> ardiv}}
+</div>
 
-<template name="arTemplate">
+<div name="ardiv">
     <div>
         <h1>Módulo de realidad aumentada</h1>
         <p>
@@ -12,10 +22,10 @@
         </p>
         <ul>
             <li>
-            	<a href="/ar/calibration">Calibración y ubicación en mapa</a>
+            	<a href="arCalibration.html">Calibración y ubicación en mapa</a>
             </li>
             <li>
-            	<a href="/ar/pointsOverMap">Puntos sobre imagen de video</a>
+            	<a href="arPointsOverMap.html">Puntos sobre imagen de video</a>
             </li>
         </ul>
     </div>
@@ -25,4 +35,7 @@
         {{> icon "backward"}}
         Regresar
     </button>
-</template>
+</div>
+
+</body>
+</html>

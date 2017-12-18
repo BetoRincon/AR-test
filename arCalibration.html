@@ -1,17 +1,23 @@
-<template name="arCalibrationTemplate">
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div name="arCalibrationdiv">
     <style type="text/css">
-    	@media screen and (max-width: 767px) {
-		    h1{font-size:19px!important}
-		}
-		@media (min-width: 768px) and (max-width: 991px) {
-		    h1{font-size:26px!important}
-		}
-		@media (min-width: 992px) and (max-width: 1199px) {
-		    h1{font-size:30px!important}
-		}
-		@media screen and (min-width: 1200px) {
-		    h1{font-size:36px!important}
-		}
+        @media screen and (max-width: 767px) {
+            h1{font-size:19px!important}
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            h1{font-size:26px!important}
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            h1{font-size:30px!important}
+        }
+        @media screen and (min-width: 1200px) {
+            h1{font-size:36px!important}
+        }
     </style>
     <div id="modigemArArea" style="height:100%">
         <div id="arHeader">
@@ -30,9 +36,9 @@
         </div>
     </div>
         {{> rotateScreen}}
-</template>
+</div>
 
-<template name="rotateScreen">
+<div name="rotateScreen">
     <section class="rotateDeviceAr">
         <img style="width:20%;" src="/themes/ui/img/login/loginLogo.svg">
         <br>
@@ -40,4 +46,11 @@
         <br>
         Gira tu smartphone
     </section>
-</template>
+</div>
+</body>
+</html>
+
+
+
+
+

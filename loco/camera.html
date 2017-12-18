@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Realidad Aumentada</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/camera.css?v8" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/adapter.js"></script>
+</head>
+<body>
+    <div id="locations"></div>
+    <div id="container">
+        <video autoplay width="320" height="240"></video>
+        <canvas width="50" height="50"></canvas>
+        <img id="imgState" style="display:none" />
+        <img id="imgSwitch" style="display:none" src="images/switch-camera.png" />
+        <img id="imgBack" src="images/back.png" />
+        <span id="errorMsg" class="text-center"></span>
+    </div>
+    <script src="script/camera.js?v6"></script>
+</body>
+</html>

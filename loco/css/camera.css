@@ -1,0 +1,10 @@
+﻿html, body { height: 100%; margin: 0; padding: 0;background-color:black!important;color:white!important}
+canvas, video{position:absolute}
+video {object-fit: fill;}
+#container{position:relative;  height: 100%;width:100%;}
+#imgState{top:0;left:0;right:0;bottom:0;margin:auto;z-index: 2;}
+#imgSwitch{bottom: 1%;position: absolute;left: 0.3%;cursor:pointer;z-index: 2;}
+#imgBack{top: 0;position: absolute;right: 0;cursor:pointer;z-index: 2;}
+#container img{position:absolute;}
+.location{color:#2b2b2b;position:absolute;background-color:rgba(255, 255, 255, 0.79);border-radius: 2px 10px;padding-left: 5px;padding-right: 5px;padding-bottom: 2px;padding-top: 2px;white-space: nowrap;top:-1000px;left:-1000px;z-index: 1;}
+#locations {position: absolute;left: 0;top: 0;width: 100%;height: 100%;overflow:hidden;}

@@ -1,0 +1,14 @@
+﻿#arHeader {background-color: #f9f9f9;z-index: 1;position: fixed;width:100%;padding: 10px;display: -webkit-flex!important;display: flex;-webkit-align-items: center;align-items: center!important;}
+#arHeader h1 {-webkit-flex: 1;flex: 1;margin:0px}
+#arHeader img{cursor: pointer;-webkit-flex: none;flex: none;}
+#map { height: 100%; }
+#imgnext {position:absolute;right: 6px;;bottom:5%;cursor: pointer;width: 64px;}
+#imgbackf {position:absolute;right: 75px;;bottom:5%;cursor: pointer;width: 64px;}
+#imglocation{display:none;width:64px;}
+.rotateDeviceAr{height: 100%;width: 100%;position: absolute;z-index: 6;background-color: rgb(128, 128, 128);top: 0px;left: 0px;text-align: center;font-size: 14px;font-family: "Titillium Web Local";display: none;    padding-top: 5%;}
+@media screen and (max-width: 1199px) and (orientation: landscape)  {
+    .rotateDeviceAr{display: block;}
+}
+@media screen and (max-width: 1199px) and (orientation: portrait)  {
+    .rotateDeviceAr{display: none;}
+}
